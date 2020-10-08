@@ -4,9 +4,9 @@ import Post from './Post';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
 
-{/* {Header, instagram logo } */}
+      {/* {Header, instagram logo } */}
       <div className="app__header">
         <img
           className="app__headerImage"
@@ -15,9 +15,12 @@ function App() {
         />
       </div>
       {/* {Posts} */}
+      <Post username="stephen" caption="wow it works" imageUrl="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
+      <Post />
       <Post />
 
       {/* {Posts} */}
+
     </div>
   );
 }
