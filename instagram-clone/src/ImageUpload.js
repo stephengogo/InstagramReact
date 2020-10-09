@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Input, Button } from "@material-ui/core";
 import { storage, db } from "./firebase";
 import firebase from "firebase";
+import './ImageUpload.css';
 
 function ImageUpload({username}) {
     const [image, setImage] = useState(null);
@@ -58,9 +59,7 @@ function ImageUpload({username}) {
     }
 
     return (
-        <div>
-            <h1>abc</h1>
-            {/* {I want to have} */}
+        <div className="imageupload">
             {/* {caption input} */}
             {/* {file picker} */}
             {/* {post button} */}
