@@ -1,2 +1,2 @@
 # InstagramReact
-Building an instagram clone on 10/8/2020 to learn react
+Hosting URL: https://instagram-with-react-30fa4.web.app
