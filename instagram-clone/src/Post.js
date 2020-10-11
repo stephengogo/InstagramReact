@@ -65,23 +65,27 @@ function Post({ postId, user, username, caption, imageUrl}) {
                 ))}
             </div>
 
-            <form className="post__commentBox">
-                <input
-                    className="post__input"
-                    type="text"
-                    placeholder="Add a comment..."
-                    value={comment}
-                    onChange={(e) => setComment(e.target.value)}
-                />
-                <button
-                    disabled={!comment}
-                    className="post__button"
-                    type="submit"
-                    onClick={postComment}
-                >
-                 Post
-                </button>
-            </form>
+            {/* only when logged in comment box shows up */}
+            {user && (
+                <form className="post__commentBox">
+                    <input
+                        className="post__input"
+                        type="text"
+                        placeholder="Add a comment..."
+                        value={comment}
+                        onChange={(e) => setComment(e.target.value)}
+                    />
+                    <button
+                        disabled={!comment}
+                        className="post__button"
+                        type="submit"
+                        onClick={postComment}
+                    >
+                    Post
+                    </button>
+                </form>
+            )}
+            
             
         </div>
     )
